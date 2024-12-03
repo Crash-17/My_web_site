@@ -1,0 +1,46 @@
+body {  
+    background-color: darkblue;
+    font-family: Arial, Helvetica, sans-serif;
+    color: chocolate;
+
+}
+.my_photo {
+    background: url(../images/express_amu3.jpg) no-repeat center center;
+    background-size: 100%;
+    width: 900px;
+    height: 600px;
+}
+.nav_logo{
+    background: url(../images/logo01.png) no-repeat center center;
+    background-size: 100%;
+    width: 100px;
+    height: 100px;
+}
+.nav_bar {
+    font-size: 35px;
+    font-weight: bold;
+}
+.container {
+    margin-top: 30px;
+    }
+.row {
+}
+.col-8 {
+}
+.col-4 {
+}
+.col-3.nav_logo {
+}
+.col-9 {
+}
+.nav_text {
+    color: coral;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img_size {
+}
+.title_photo {
+    text-align: end;
+}
