@@ -52,9 +52,10 @@
                     </h1>  
                    </div>
                    <div class="col-12">
-                    <form method="POST" action="profile.php">
+                    <form method="POST" action="profile.php" enctype="multipart/form-data" name="upload">
                         <input type="text" class="form" type="text" name="title" placeholder="Заголовок поста">
                         <textarea name="text" cols="30" rows="10" placeholder="Введите текст поста ..."></textarea>
+                        <input type="file" name="file" /><br>
                         <button type="submit" class="btn_reg btn_reg" name="submit">Сохранить пост</button>
                     </form>
                    </div>
