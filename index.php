@@ -16,7 +16,7 @@
 <div class="container">
     <div class="row">
         <div class="col-12 index">
-            <h1>Не проходите мимо!</h1>
+            <h1>Страница постов</h1>
         <?php
         if (!isset($_COOKIE['User'])){
         ?>
@@ -24,6 +24,18 @@
        <?php
        } else {
            // Подключение к БД
+           $link = mysqli_connect('localhost', 'root', 'kali', 'db04');
+ 
+           $sql = "SELECT * FROM posts";
+           $res = mysqli_query($link, $sql);
+ 
+           if (mysqli_num_rows($res) >  0) {
+            while ($post = mysqli_fetch_array($res)) {
+                echo "<a href='/posts.php?id=" . $post["id"] . "'>" . $post['title'] . "</a>\\n";              
+            }
+           } else {
+                echo "Записей пока нет";
+           }
        }
        ?>
        </div>
@@ -32,3 +44,4 @@
 </body>
 </html>
        
+
